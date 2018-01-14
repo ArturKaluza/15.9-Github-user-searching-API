@@ -50,7 +50,12 @@ var App = function (_React$Component) {
 
       return React.createElement(
         "div",
-        null,
+        { className: "container" },
+        React.createElement(
+          "h1",
+          null,
+          "Github user serach engine"
+        ),
         React.createElement(
           "form",
           { onSubmit: function onSubmit(event) {
@@ -91,7 +96,7 @@ var UsersList = function (_React$Component2) {
     value: function render() {
       return React.createElement(
         "div",
-        null,
+        { className: "usersList" },
         this.users
       );
     }
@@ -121,7 +126,7 @@ var User = function (_React$Component3) {
     value: function render() {
       return React.createElement(
         "div",
-        null,
+        { className: "user" },
         React.createElement("img", { src: this.props.user.avatar_url, style: { maxWidth: '100px' } }),
         React.createElement(
           "a",
